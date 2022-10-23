@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Minecraft Launcher UI Clone |  Web Jeet</title>
+    <link rel="stylesheet" href="./css/style.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="shortcut icon" href="./images/m-logo.png" type="image/x-icon">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+</head>
+<body class="overflow-hidden select-none w-screen flex items-start float-left bg-gray-700" style="font-family: 'Roboto', sans-serif;">
+    <div class="w-56 bg-neutral-800 h-screen text-white relative float-left" id="sidebar">
+        <div id="gtabs1" class="hover:bg-white/25 pl-5 w-full h-16 flex gap-3 justify-start items-center text-sm"> <img src="./images/m-news.png" width="30px" alt=""> News</div>
+        <div onclick="javaedition()" id="gtabs2" class="hover:bg-white/25 pl-5 w-full h-16 flex gap-5 justify-start items-center text-sm "> <img src="./images/m-logo.png" width="20px" alt=""> MINECRAFT : <br> Java Edition</div>
+        <div onclick="bedrockedition()" id="gtabs3" class="hover:bg-white/25 pl-5 w-full h-16 flex gap-5 justify-start items-center text-sm "> <img src="./images/m-windows.png" width="20px" alt=""> MINECRAFT : <br>For Windows </div>
+        <div onclick="minecraftdungeons()" id="gtabs4" class="hover:bg-white/25 pl-5 w-full h-16 flex gap-5 justify-start items-center text-sm "> <img src="./images/m-dungeons.png" width="20px" alt=""> MINECRAFT : <br>Dungeons </div>
+        <div onclick="minecraftlegends()" id="gtabs5" class="hover:bg-white/25 pl-5 w-full h-16 flex gap-5 justify-start items-center text-sm "> <img src="./images/m-legends.png" width="20px" alt=""> MINECRAFT : <br>Legends </div>
+        <div onclick="minecraftlive()" id="gtabs6" class="hover:bg-white/25 pl-5 w-full h-16 flex gap-5 justify-start items-center text-sm "> <img src="./images/m-live.png" width="20px" alt=""> MINECRAFT : <br>Live </div>
+        <div id="gtabs7" class="absolute bottom-16 left-0 right-0 w-full hover:bg-white/25 pl-5 h-16 flex justify-start items-center gap-3"> <img src="./images/m-news.png" width="30px" alt=""> What's New</div>
+        <div id="gtabs8" class="absolute inset-x-0 bottom-0 w-full hover:bg-white/25 pl-5 h-16 flex justify-start items-center gap-3"> <img src="./images/settings.png" width="30px" alt=""> Settings</div>
+    </div>
+    <div class="float-left bg-neutral-800  text-white  text-start w-full">
+        <div id="gameheader" class="bg-neutral-800 h-26 p-6" style="width: 86%; height: 94px;" >
+            <div  class="text-sm font-bold"><p id="gameedition">MINECRAFT JAVA EDITION</p></div>
+            <div  id="javatabs" >
+                <ul class="flex items-center justify-start hover">
+                    <li id="header1" class="text-sm px-4 py-3 text-white font-bold border-b-2 border-b-green-500">Play</li>
+                    <li id="header2" class="text-sm px-4 py-3 text-gray-300 hover:text-gray-200 hidden">DLC</li>
+                    <li id="header3" class="text-sm px-4 py-3 text-gray-300 hover:text-gray-200 hidden">FAQ</li>
+                    <li id="header4" class="text-sm px-4 py-3 text-gray-300 hover:text-gray-200">Installations</li>
+                    <li id="header5" class="text-sm px-4 py-3 text-gray-300 hover:text-gray-200">Skins</li>
+                    <li id="header6" class="text-sm px-4 py-3 text-gray-300 hover:text-gray-200">Patch Notes</li>
+                </ul>
+            </div>
+        </div>
+        <div id="game-bg" class="w-full bg-center bg-cover bg-no-repeat" style="background-image: url(./images/java-edition.jpg); height: 33rem;"></div>
+        <div class="playbar w-full bg-neutral-800 h-16 flex justify-around relative p-2">
+            <div class="absolute left-1 top-0 bottom-0 flex items-center ">
+                <select name="updates" class="text-white bg-neutral-800 h-10 outline-none">
+                    <option value="1">Latest Release <br> 1.19</option>
+                    <option value="2">Latest Release <br> 1.18</option>
+                    <option value="3">Latest Release <br> 1.17</option>
+                    <option value="4">Latest Release <br> 1.16</option>
+                </select>
+            </div>
+            <div class="absolute top-0 bottom-16 flex items-center">
+                <button id="play-btn" class="bg-green-800 text-white p-3 w-52 rounded-sm text-2xl hover:bg-green-900">PLAY</button>
+            </div>
+            <div class="flex justify-center items-center text-lg absolute top-0 bottom-0 right-10">
+                <p>Player</p>
+            </div>
+        </div>
+    </div>
+</body>
+<script src="./js/index.js" type="module"></script>
+</html>
