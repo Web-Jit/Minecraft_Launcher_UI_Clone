@@ -48,3 +48,4 @@ function minecraftlive(){
     document.getElementById('header5').style.display = 'none';
     document.getElementById('header6').style.display = 'none';
 }
+console.clear()
